@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]>
+<html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+    <title>A Symbolic Approach for Counterfactual Explanations &#8211; Ryma Boumazouza</title>
+    <meta name="description" content="Explainable AI">
+    <meta name="keywords" content="eXplainable AI, MCS, Counterfactual Explanation">
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://rymabmzz.github.io/assets/img/logo2.jpeg">
+    <meta name="twitter:title" content="A Symbolic Approach for Counterfactual Explanations">
+    <meta name="twitter:description" content="What is a Counterfactual explanation ? and how do we generate it using knowledge representation techniques ?">
+    <!-- Open Graph -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="A Symbolic Approach for Counterfactual Explanations">
+    <meta property="og:description" content="What is a Counterfactual explanation ? and how do we generate it using knowledge representation techniques ?">
+    <meta property="og:url" content="https://rymabmzz.github.io/sum20.html">
+    <meta property="og:site_name" content="Ryma Boumazouza">
+    <meta property="og:image" content="https://rymabmzz.github.io/assets/img/logo2.jpeg">
+    <link rel="canonical" href="https://rymabmzz.github.io/sum20.html">
+    <link href="https://rymabmzz.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Ryma Boumazouza Feed">
+    <!-- Handheld -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://rymabmzz.github.io/assets/css/main.css">
+    <link rel="stylesheet" href="https://rymabmzz.github.io/assets/css/academicons.css">
+    <!-- JS -->
+    <script src="https://rymabmzz.github.io/assets/js/modernizr-3.3.1.custom.min.js"></script>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://rymabmzz.github.io/assets/img/favicons/logo-icon-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://rymabmzz.github.io/assets/img/favicons/logo-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://rymabmzz.github.io/assets/img/favicons/logo-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://rymabmzz.github.io/assets/img/favicons/logo-icon-144x144.png">
+    <link rel="shortcut icon" type="image/png" href="https://rymabmzz.github.io/favicon.png" />
+    <link rel="shortcut icon" href="https://rymabmzz.github.io/favicon.ico" />
+    <!-- Background Image -->
+    <style type="text/css">
+        body {
+            background-image: url(https://rymabmzz.github.io/assets/img/portfolio-image.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <!-- Post Feature Image -->
+</head>
+
+<body>
+    <nav id="dl-menu" class="dl-menuwrapper" role="navigation"> <button class="dl-trigger">Open Menu</button>
+        <ul class="dl-menu">
+            <li><a href="https://rymabmzz.github.io/">Home</a></li>
+            <li> <a href="#">About</a>
+                <ul class="dl-submenu">
+                    <li> <img src="https://rymabmzz.github.io/assets/img/logo2.jpeg" alt="Ryma Boumazouza photo" class="author-photo">
+                        <h4>Ryma Boumazouza</h4>
+                        <p>Explainable AI</p>
+                    </li>
+                    <li><a href="https://rymabmzz.github.io/about/"><span class="btn btn-inverse">Learn More</span></a></li>
+                    <li> <a href="mailto:ryma.bmzz@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-envelope-square"></i> Email</a> </li>
+                    <li> <a href="https://www.linkedin.com/in/ryma-boumazouza/" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-linkedin-square"></i> LinkedIn</a> </li>
+                    <li> <a href="https://github.com/RymaBmzz" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-github"></i> Github</a> </li>
+                </ul>
+                <!-- /.dl-submenu -->
+            </li>
+            <li> <a href="#">Posts</a>
+                <ul class="dl-submenu">
+                    <li><a href="https://rymabmzz.github.io/posts/">All Posts</a></li>
+                    <!-- <li><a href="https://rymabmzz.github.io/tags/">All Tags</a></li> -->
+                </ul>
+            </li>
+            <li><a href="https://rymabmzz.github.io/projects/">Projects</a></li>
+        </ul>
+        <!-- /.dl-menu -->
+    </nav>
+    <!-- /.dl-menuwrapper -->
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="wrapper animated fadeIn">
+            <div class="content">
+                <div class="post-title ">
+                    <h1>A Symbolic Approach for Counterfactual Explanations</h1>
+                    <h4>September 23, 2020</h4>
+                    <p class="reading-time"> <i class="fa fa-clock-o"></i> Reading time ~3 minutes </p>
+                    <!-- /.entry-reading-time -->
+                    <a class="btn zoombtn" href="https://rymabmzz.github.io/posts/"> <i class="fa fa-chevron-left"></i> </a>
+                </div>
+
+                <p>
+                    In this paper titled <a href=https://link.springer.com/chapter/10.1007%2F978-3-030-58449-8_21> A Symbolic Approach for Counterfactual Explanations</a> we propose a novel symbolic approach to provide counterfactual explanations for
+                    a classifier predictions. Contrary to most explanation approaches where the goal is to understand which and to what extent parts of the data helped to give a prediction, counterfactual explanations indicate which features must be changed
+                    in the data in order to change this classifier prediction. Our approach is symbolic in the sense that it is based on encoding the decision function of a classifier in an equivalent CNF formula. In this approach, counterfactual explanations
+                    are seen as the Minimal Correction Subsets (MCS), a well-known concept in knowledge base reparation. Hence, this approach takes advantage of the strengths of already existing and proven solutions for the generation of MCS. Our preliminary
+                    experimental studies on Bayesian classifiers show the potential of this approach on several datasets.
+
+                </p>
+
+                <blockquote>
+                    <em> Ryma Boumazouza, Fahima Cheikh-Alili, Bertrand Mazure and Karim Tabia. A Symbolic Approach for Counterfactual Explanations  published in The <a href=https://sum2020.inf.unibz.it/> 14th International Conference on Scalable Uncertainty Management</a>, September 2020.  <a href=https://link.springer.com/chapter/10.1007%2F978-3-030-58449-8_21> link </a> </em>
+                </blockquote>
+                <div class="entry-meta"> <br>
+                    <hr>
+
+                    <span class="social-share"> 
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://rymabmzz.github.io/sum20.html" title="Share on Facebook" class="tag"> 
+                            <span class="term"><i class="fa fa-facebook-square"></i> Share</span> </a>
+                    <a href="https://twitter.com/intent/tweet?text=https://rymabmzz.github.io/sum20.html" title="Share on Twitter" class="tag">
+                        <span class="term"><i class="fa fa-twitter-square"></i> Tweet</span> </a>
+                    <a href="https://plus.google.com/share?url=https://rymabmzz.github.io/sum20.html" title="Share on Google+" class="tag">
+                        <span class="term"><i class="fa fa-google-plus-square"></i> +1</span> </a>
+                    </span>
+                    <div style="clear:both"></div>
+                </div>
+            </div>
+        </div>
+        <section id="disqus_thread" class="animated fadeInUp"></section>
+        <!-- /#disqus_thread -->
+    </header>
+    <!-- JS -->
+    <script src="https://rymabmzz.github.io/assets/js/jquery-1.12.0.min.js"></script>
+    <script src="https://rymabmzz.github.io/assets/js/jquery.dlmenu.min.js"></script>
+    <script src="https://rymabmzz.github.io/assets/js/jquery.goup.min.js"></script>
+    <script src="https://rymabmzz.github.io/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="https://rymabmzz.github.io/assets/js/jquery.fitvid.min.js"></script>
+    <script src="https://rymabmzz.github.io/assets/js/scripts.js"></script>
+    <script type="text/javascript">
+        var disqus_shortname = 'taylantatli';
+        (function() {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        (function() {
+            var s = document.createElement('script');
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script> <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- MathJax -->
+    <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+
+</html>
